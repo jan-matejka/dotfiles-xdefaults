@@ -1,0 +1,19 @@
+/* settings for basic sanity */
+URxvt*.transparent: true
+URxvt*foreground: white
+URxvt*background: black
+URxvt*scrollBar: False
+
+/* XXX: perl lib should not be in config files */
+URxvt*perl-lib: /home/yac/.config/urxvt/perl
+
+/* unichr: enter unicode chars by number after pressing C-Shift-U
+ * (with hinting) */
+URxvt*perl-ext: default,unichr
+
+/* shading 20 makes comments in my vim unreadable on
+ * rainbow-dash-hd-196278.jpg, 10 looks fine */
+URxvt*.shading: 10
+
+/* unicode capable font */
+URxvt*font:        xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
