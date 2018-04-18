@@ -17,3 +17,7 @@ URxvt*.shading: 10
 
 /* unicode capable font */
 URxvt*font:        xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+
+!blue
+*color4:  #46aede
+*color12: #46aede
