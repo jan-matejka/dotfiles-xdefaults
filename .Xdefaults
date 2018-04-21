@@ -21,3 +21,6 @@ URxvt*font:        xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
 !blue
 *color4:  #46aede
 *color12: #46aede
+
+!red
+*color1: #ff87ff
