@@ -7,3 +7,4 @@ build:
 install:
 
 	install .Xdefaults $(HOME)/.Xdefaults
+	install .xmodmap $(HOME)/.xmodmap
