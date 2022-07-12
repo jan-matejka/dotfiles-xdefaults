@@ -16,7 +16,18 @@ URxvt*perl-ext: default,unichr
 URxvt*.shading: 10
 
 /* unicode capable font */
-URxvt*font:        xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+URxvt*font:        xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true, xft:Noto Emoji
+!URxvt*font:        xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
+!URxvt*font:        xft:Mono PowerlineSymbols:pixelsize=12:antialias=true:hinting=true
+!URxvt*font:        xft:Noto:pixelsize=12:antialias=true:hinting=true
+!URxvt*font:        xft:Noto Emoji:pixelsize=12
+!URxvt*font:        xft:Mono:pixelsize=12:antialias=true:hinting=true
+!URxvt*font:        xft:Terminess Powerline:size=12:antialias=true:hinting=true
+!URxvt*font:        xft:DejaVu Sans Mono Powerline:size=12:antialias=true:hinting=true
+!URxvt*font: xft:Terminus:pixelsize=12,xft:Inconsolata\ for\ Powerline:pixelsize=12
+
+
+
 
 !blue
 *color4:  #46aede
