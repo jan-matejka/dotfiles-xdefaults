@@ -1,6 +1,28 @@
+! remap caps lock to escape
+! Note: there is program xcape that can do the same with `xcape -e 'Mode_switch=Escape'. However,
+! it sucks.
+! 1. It keeps running in the background an actively intercepts the keys for some reason.
+! 2. Running setxkbmap to change the layout (eg. between czech and english), it makes the xcape to
+!    stop working.
+! 3. Running xcape in a script after setxkbmap introduces a race condition in which there is window
+!    between changing the layout and xcape taking effect. It is too easy to hit this window and get
+!    stuck with Caps Lock on and no key to disable it.
+! 4. Therefore, switching to xmodmaprc.
+! 5. Note, this xmodmaprc keeps working even after changing keyboard layout with setxkbmap.
+! 6. However, what xcape achieved in conjunction with xmodmap was that pressing Caps Lock effects an
+!    Escape while holding Caps Lock and pressing h effects a Left arrow.
+!
+!    I don't see how to make it work without xcape, so Esc key will be Mode_switch to use with hjkl
+!    as arrows. Lets see how that goes.
+
+! remove Caps Lock functionality from Mode_switch
 clear Lock
-keycode 66 = Mode_switch
-keycode 9 = Escape
+! Escape key effects Mode_switch
+keycode 9 = Mode_switch
+! Caps Lock key effects Escape
+keycode 66 = Escape
+
+! Escape key + hjkl = Left Right Up Down
 keysym h = h H Left
 keysym l = l L Right
 keysym k = k K Up
